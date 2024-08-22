@@ -25,13 +25,6 @@ pagesEle.addEventListener('input', function(e) {
     this.value = this.value.replace(/[^0-9]/g, '');
 });
 
-// titleEle.addEventListener('input', (e) => {
-//     console.log(this.value);
-//     if(this.value == '' || this.value == null){
-//         alert('Name cannot be empty');
-//     }
-// });
-
 
 function Book(title, author, pages, haveRead){
     this.title = title;
@@ -48,12 +41,14 @@ const book2 = new Book('The Kite Runner', 'Khaled Hosseini', 334, true);
 const book3 = new Book('1984', 'George Orwell', 449, true);
 const book4 = new Book('Dracula', 'Bram Stoker', 418, false);
 const book5 = new Book('Days at Morisaki Bookshop', 'idk man', 223, false);
+const book6 = new Book('Dracula', 'Bram Stoker', 418, false);
 
 myLibrary.push(book1);
 myLibrary.push(book2);
 myLibrary.push(book3);
 myLibrary.push(book4);
 myLibrary.push(book5);
+myLibrary.push(book6);
 
 function getUserInput() {
     let title = title;
@@ -144,17 +139,6 @@ addBookBtn.addEventListener('click', () => {
 });
 
 form.addEventListener('submit', (e) => {
-    // let messages = []
-
-    // if(titleEle.value === '' || titleEle.value === null){
-    //     messages.push('Title is required');
-    // }
-
-    // if(messages.length > 0){
-    //     e.preventDefault();
-    // }
-    // addBoodToLibrary();
-    // showBook(myLibrary[myLibrary.length-1]);
     if(form.checkValidity()){
         addBoodToLibrary();
         form.reset();
@@ -206,6 +190,5 @@ readBtn.forEach((button) => {
 
 for (let i = 0; i < myLibrary.length; i++){
     showBook(myLibrary[i]);
-    // console.log(myLibrary[i])
 }
 

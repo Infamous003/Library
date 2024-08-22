@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
-    padding: 0 2rem;
+    /* padding: 0 1rem; */
 }
 
 header, main {
@@ -52,26 +52,22 @@ header #title{
 
 .container {
     display: grid;
-    gap: 2rem;
-}
-
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
     justify-content: space-around;
     gap: 2rem;
 }
 
 .card {
-    background-color: var(--card-bg-color);
-    justify-self: center;
-    border: 2px solid var(--btn-bg-color);
-    border-radius: 0.5rem;
-    width:300px;
-    padding: 1.5rem 1rem;
     display: flex;
     flex-direction: column;
+    background-color: var(--card-bg-color);
+    /* justify-self: space-between; */
+    align-items: stretch;
+    border: 2px solid var(--btn-bg-color);
+    border-radius: 0.5rem;
+    width:325px;
+    padding: 1.5rem 1rem;
+    height: max-content;
 }
 
 h2 {
@@ -87,7 +83,6 @@ p {
 }
 
 .btn-container > button {
-    
     font-weight: bold;
     border: none;
     border-radius: 0.4rem;

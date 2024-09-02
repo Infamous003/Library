@@ -39,9 +39,9 @@ function Book(title, author, pages, haveRead){
 const book1 = new Book('The Silent Patient', 'Alex Michaelides', 286, true);
 const book2 = new Book('The Kite Runner', 'Khaled Hosseini', 334, true);
 const book3 = new Book('1984', 'George Orwell', 449, true);
-const book4 = new Book('Dracula', 'Bram Stoker', 418, false);
-const book5 = new Book('Days at Morisaki Bookshop', 'idk man', 223, false);
-const book6 = new Book('Dracula', 'Bram Stoker', 418, false);
+const book4 = new Book('Dracula', 'Bram Stoker', 197, false);
+const book5 = new Book('Days at Morisaki Bookshop', 'Santoshi Yagisawa', 169, true);
+const book6 = new Book('The Digital Fortress', 'Dan Brown', 418, false);
 
 myLibrary.push(book1);
 myLibrary.push(book2);
